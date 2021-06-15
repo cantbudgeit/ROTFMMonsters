@@ -1,0 +1,111 @@
+{
+	"siteVersion": "1.131.2",
+	"monster": [
+		{
+			"name": "Permafrost Mammoth",
+			"source": "ScientificSecretsofIcewindDale",
+			"page": 0,
+			"size": "H",
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 126,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 9,
+			"con": 21,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"passive": 10,
+			"resist": [
+				"bludgeoning",
+				"piercing and slashing damage (frozen form only)"
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhausted",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Languages-",
+					"entries": [
+						"Challenge 6 (2,300 XP)"
+					]
+				},
+				{
+					"name": "Freezing and Thawing",
+					"entries": [
+						"If the permafrost undead mammoth takes 10 or more fire damage, it changes to its thawed form. While in its thawed form, if it takes 10 or more cold damage, it regains hit points equal to the cold damage it takes, and reverts to its frozen form. When the permafrost mammoth changes forms, its statistics stay the same in its frozen and thawed forms, except for some abilities and actions, which specify if they can be used in its frozen or thawed form."
+					]
+				},
+				{
+					"name": "Frozen Body (Frozen form only)",
+					"entries": [
+						"The permafrost undead's melee weapon attacks deal an additional 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Frozen Blood",
+					"entries": [
+						"While in its frozen form, the permafrost undead has advantage on saves against being pushed or knocked {@condition prone}. While in its thawed form, the permafrost undead's speed increases by 5 feet."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the permafrost mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the mammoth can make one stomp attack against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}25 ({@damage 4d8 + 7}) piercing damage. If the permafrost mammoth is in its frozen form, this attack deals an additional 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one {@condition prone} creature. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage. If the permafrost mammoth is in its frozen form, this attack deals an additional 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Freezing Mud Breath (Thawed form only, Recharge 5-6)",
+					"entries": [
+						"The permafrost mammoth expels a freezing gout of mud from its lungs in a 15-foot cone. Each creature in that area must make a {@dc 16} Dexterity saving throw, taking 13 ({@damage 2d12}) cold damage and becoming {@condition blinded} until the end of the permafrost mammoth's next turn on a failure, or half as much damage on a failure."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
